@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> S11 - Entreprise de Services du Numérique</title>
+        <meta name="description" content="Site entreprise s11" />
+        <link rel="icon" type="image/x-icon" href="images/s11_logo.svg">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        
+        <script src="https://cdn.tailwindcss.com"></script>
+        
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            customlightgray: '#C5C5C5',
+                            customblue: '#0077B6',
+                            customlightblue: '#EAFFFF',
+                            customyellow: '#FBB913'
+                        },
+                        
+                        fontFamily: {
+                            poppins: ['"Poppins"', "sans-serif"],
+                        },
+                    }}}
+        </script>
+    </head>
+
+    <body class="w-full flex justify-center relative bg-customgreen min-h-screen">
+        <div class="w-full justify-center font-poppins">
+            <nav class="bg-lightgray w-full p-2">
+                <div class="flex-wrap gap-2 items-center">
+                    <div class="flex flex-col md:flex-row lg:flex-row lg:gap-6 lg:items-center">
+                        <div class="flex items-center justify-center lg:ml-8">
+                            <img src="images/S11_logo.svg" alt="Logo s11" class="w-16">                
+                        </div>
+                        
+                        <div class="flex hidden lg:block items-center lg:row-span-1 ml-8">
+                            <a href="#qui-sommes-nous" class="font-bold text-xl">Qui sommes-nous ?</a>
+                        </div>
+                        <div class="flex hidden lg:block items-center lg:row-span-1 ml-8">
+                            <a href="#expertises" class="font-bold text-xl">Nos expertises</a>
+                        </div>
+                        <div class="flex hidden lg:block items-center lg:row-span-1 ml-8">
+                            <a href="#contacts" class="font-bold text-xl">Nous contacter</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="w-full">
+                <section id="accueil">
+                    <div class="relative lg:h-screen lg:border-t-4 lg:border-b-4 border-customblue">
+                        <img src="images/photo.png" alt="Image" class="w-full h-96 lg:h-full object-cover" />
+                        
+                        <div class="absolute inset-0 flex p-8 lg:p-24 flex-col space-y-4 lg:space-y-2 justify-center">
+                            <h1 class="flex-row uppercase text-white font-semibold text-3xl lg:mt-16 lg:text-4xl">Des solutions pour améliorer votre réseau</h1>
+                            <span class="flex-row text-white text-lg lg:text-2xl ">Services informatiques dans les Ardennes, pour les professionnels</span>
+                            
+                            <div class="py-6">
+                                <button class="bg-customblue w-72 h-12 text-white flex items-center justify-between px-4 group hover:bg-customblue-dark">
+                                    <a href="#expertises" class="text-lg">Découvrir nos expertises</a>
+                                    <a href="#expertises">
+                                        <img src="images/arrow.svg" alt="Flèche" class="w-8 h-8 transform transition-transform duration-300 group-hover:translate-x-2"/>
+                                    </a>
+                                </button>
+                            </div>              
+                        </div>
+                    </div>
+                </section>
+
+                <section id="qui-sommes-nous">
+                    <div class="flex flex-col p-8 lg:p-12 bg-customblue space-y-4 text-white">
+                        <h1 class="flex flex-row text-2xl lg:py-4 lg:text-3xl underline underline-offset-8 uppercase font-semibold decoration-white">Qui sommes-nous ?</h1>
+                        
+                        <div class="flex flex-row lg:space-x-4">
+                            <img src="images/S11_logo_white.svg" class="hidden lg:block"></img>
+                            <p class="flex flex-row text-lg lg:text-xl text-justify items-center">Spécialisés en conseil et en mise en place de solutions informatiques, nous vous accompagnons à chaque étape de vos projets pour optimiser vos systèmes, garantir leur sécurité et maximiser leur performance.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="expertises">
+                    <div class="flex flex-col p-8 lg:p-12 bg-customlightblue lg:border-t-8 lg:border-b-8 lg:border-customblue">
+                        <h1 class="text-2xl lg:text-3xl underline underline-offset-8 uppercase font-semibold decoration-customblue mb-6">Nos expertises</h1>
+                    
+                        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 p-4">
+                            <div class="max-w-sm bg-white shadow-lg rounded-lg dark:bg-customblue transform transition-transform duration-300 hover:scale-105">
+                                <img class="rounded-t-lg" src="images/1.png" alt="Photo conseils" />
+                                <div class="p-5">
+                                    <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Conseils</h2>
+                                    <p class="mb-3 font-normal text-gray-700 dark:text-white">Avis · Audit · Accompagnement</p>
+                                </div>
+                            </div>
+                        
+                            <div class="max-w-sm bg-white shadow-lg rounded-lg dark:bg-customblue transform transition-transform duration-300 hover:scale-105">
+                                <img class="rounded-t-lg" src="images/2.png" alt="Photos services" />
+                                <div class="p-5">
+                                    <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Services</h2>
+                                    <p class="mb-3 font-normal text-gray-700 dark:text-white">Développement de solutions · Systèmes et réseaux · Cybersécurité</p>
+                                </div>
+                            </div>
+                        
+                            <div class="max-w-sm bg-white shadow-lg rounded-lg dark:bg-customblue transform transition-transform duration-300 hover:scale-105">
+                                <img class="rounded-t-lg" src="images/3.png" alt="Photo supports" />
+                                <div class="p-5">
+                                    <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Supports</h2>
+                                    <p class="mb-3 font-normal text-gray-700 dark:text-white">Dépannage · Infogérance · Maintenance</p>
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
+                </section>
+
+                <section id="contacts">
+                    <div class="flex flex-col p-8 lg:p-12 bg-white">
+                        <h1 class="text-2xl lg:py-4 lg:text-3xl underline underline-offset-8 uppercase font-semibold decoration-customblue mb-6">Nous contacter</h1>
+                    
+                        <div class="flex flex-col lg:flex-row gap-8 lg:gap-12 justify-center">
+                            <div class="flex items-center space-x-4">
+                                <img src="images/phone.svg" alt="Icône téléphone" class="w-10 lg:w-12">
+                                <div class="flex flex-col">
+                                    <p class="text-xl lg:text-2xl font-semibold">Téléphone</p>
+                                    <p class="text-lg lg:text-xl">00.00.00.00.00</p>
+                                </div>
+                            </div>
+                    
+                            <div class="flex items-center space-x-4">
+                                <img src="images/mail.svg" alt="Icône mail" class="w-10 lg:w-12">
+                                <div class="flex flex-col">
+                                    <p class="text-xl lg:text-2xl font-semibold">Mail</p>
+                                    <p class="text-lg lg:text-xl">contact_s11@gmail.com</p>
+                                </div>
+                            </div>
+                    
+                            <div class="flex items-center space-x-4">
+                                <img src="images/location.svg" alt="Icône adresse" class="w-10 lg:w-12">
+                                <div class="flex flex-col">
+                                    <p class="text-xl lg:text-2xl font-semibold">Adresse</p>
+                                    <p class="text-lg lg:text-xl">32 rue Jean-Baptiste Clément</p>
+                                    <p class="text-lg lg:text-xl uppercase">75000 Paris</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <footer class="p-2 bg-customblue font-glory text-sm lg:text-md text-white text-center">             
+                <p class="flex justify-center">2023 © S11 - Entreprise de Services du Numérique</p>
+            </footer>
+        </div>
+    </body>
+</html>
